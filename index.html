@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Student Management System</h1>
+        <p>Manage student records easily</p>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Add Student Section -->
+        <section class="form-section">
+            <h2>Add Student</h2>
+
+            <form id="studentForm">
+
+                <input
+                    type="text"
+                    id="studentId"
+                    placeholder="Student ID"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Student Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="department"
+                    placeholder="Department"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="marks"
+                    placeholder="Marks"
+                    min="0"
+                    max="100"
+                    required
+                >
+
+                <button type="submit">Add Student</button>
+
+            </form>
+        </section>
+
+        <!-- Student Records Section -->
+        <section class="student-section">
+
+            <div class="top">
+                <h2>Student Records</h2>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search student..."
+                >
+            </div>
+
+            <!-- Student Table -->
+            <div class="table-container">
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Marks</th>
+                            <th>Grade</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="studentTable">
+                        <!-- Student records will be added by JavaScript -->
+                    </tbody>
+
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

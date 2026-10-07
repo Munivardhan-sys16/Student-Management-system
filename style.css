@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+}
+
+header {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.form-section,
+.student-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#search {
+    width: 250px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #2563eb;
+    color: white;
+}
+
+.delete-btn {
+    background: #dc2626;
+    margin-left: 5px;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+.edit-btn {
+    background: #16a34a;
+}
+
+.edit-btn:hover {
+    background: #15803d;
+}
+
+@media (max-width: 700px) {
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    .student-section {
+        overflow-x: auto;
+    }
+}
